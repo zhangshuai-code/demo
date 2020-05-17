@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 插件入口引入
+import vueMsg from './plugins/index'
+Vue.use(vueMsg)
 
 Vue.config.productionTip = false
 
