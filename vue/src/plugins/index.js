@@ -19,6 +19,7 @@
 
 // export default plugins
 // 循环引入组件
+// https://www.jianshu.com/p/c894ea00dfec require.context 此方法见文档说明
 const requireComponent = require.context('./', true, /\.vue$/)
 console.log(requireComponent.keys(), 'requireComponent')
 const install = (Vue) => {
